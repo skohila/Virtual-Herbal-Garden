@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerbQuest</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #31543e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar .logo img {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .navbar .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            border-bottom: #bbb 1px solid;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+        }
+
+        .flower-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 10px 0;
+            border: 4px solid black;
+            border-radius: 15px;
+            cursor: pointer;
+            background-color: transparent;
+            width: 200px; /* Adjusted width for image and text */
+            height: 100px; /* Adjusted height */
+            overflow: hidden;
+            text-decoration: none; /* Remove underline from the text */
+        }
+
+        .flower-button img {
+            width: 100px; /* Adjusted size for better fit */
+            height: 50px;
+            margin-right: 10px; /* Space between image and text */
+        }
+
+        .flower-button span {
+            font-size: 18px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .flower-button:hover {
+            opacity: 0.8;
+        }
+
+        .center-image {
+            width: 300px; /* Adjust the width as needed */
+            height: auto;
+            margin: 0 20px; /* Space between sections and image */
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="logo">
+            <img src="img1.png" alt="Logo">
+            HerbQuest
+        </a>
+    </div>
+
+    <header>
+        <h1>Herbal Plants</h1>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="button-group">
+                <a href="tulsi.html" class="flower-button">
+                    <img src="i7.jpeg" alt="Sunflower">
+                    <span>Tulsi</span>
+                </a>
+                <a href="neem.html" class="flower-button">
+                    <img src="i8.jpeg" alt="Rose">
+                    <span>Neem</span>
+                </a>
+                <a href="peppermint.html" class="flower-button">
+                    <img src="i9.jpeg" alt="Tulip">
+                    <span>Peppermint</span>
+                </a>
+            </div>
+
+            <img src="img6.jpg" alt="Center Image" class="center-image">
+
+            <div class="button-group">
+                <a href="aloevera.html" class="flower-button">
+                    <img src="i10.jpeg" alt="Sunflower">
+                    <span>Aloe Vera</span>
+                </a>
+                <a href="ashwagandha.html" class="flower-button">
+                    <img src="i11.jpeg" alt="Rose">
+                    <span>Ashwagandha</span>
+                </a>
+                <a href="turmeric.html" class="flower-button">
+                    <img src="i11.jpeg" alt="Tulip">
+                    <span>Turmeric</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 HerbQuest. All rights reserved.
+    </footer>
+</body>
+</html>

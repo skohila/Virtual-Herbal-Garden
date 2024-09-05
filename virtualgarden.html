@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #31543e;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar .logo img {
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .navbar .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>VirtualHerbalGarden</title>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" class="logo">
+        <img src="img1.png" alt="Logo">
+        HerbQuest
+    </a>
+    <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+		<li><a href="herbalplants.html">Herbal Plants</a></li>
+        <li><a href="signin.html">Sign In</a></li>
+		<li><a href="review.html">Review</a></li>
+    </ul>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image with Text and Button Overlay</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover; /* Ensures the image covers the entire container */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Transparent black background */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .overlay p {
+            font-size: 2vw; /* Responsive text size */
+            margin: 20px;
+            max-width: 80%; /* Limit the paragraph width */
+        }
+        .overlay .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1vw 2vw; /* Responsive padding */
+            text-decoration: none;
+            font-size: 2vw; /* Responsive button size */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .overlay .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="img2.jpg" alt="Example Image">
+        <div class="overlay">
+            <p>With the aid of interactive 3D models, thorough information, and multimedia materials, explore an extensive array of medicinal plants. Our Virtual Herbal Garden provides an immersive learning experience that puts traditional herbal knowledge at your fingertips, whether you are a student, practitioner, or herbal enthusiast.</p>
+            <button class="button" onclick="window.location.href='herbalplants.html'">Start Learning</button>
+        </div>
+    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #355E3B;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer .links {
+            flex: 1;
+        }
+        .footer .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .footer .links a:first-child {
+            margin-left: 0;
+        }
+        .footer .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .footer {
+            background-color: #355E3B;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .footer .links {
+            flex: 1;
+        }
+        .footer .links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .footer .links a:first-child {
+            margin-left: 0;
+        }
+        .footer .social-icons {
+            display: flex;
+            justify-content: flex-end;
+            flex: 1;
+        }
+        .footer .social-icons a {
+            margin-right: 50px;
+        }
+        .footer .social-icons a img {
+            width: 2vw; /* 5% of the viewport width */
+            height:2;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="links">
+            <a href="virtualgarden.html">Home</a>
+            <a href="herbalplants.html">Herbal Plants</a>
+            <a href="signin.html">Stay in touch</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://business.linkedin.com/marketing-solutions/cx/21/11/linkedin-pages?src=go-pa&trk=sem-ga_campid.14649643571_asid.147321839943_crid.657155006618_kw.create%20linkedin%20page_d.c_tid.kwd-354032715251_n.g_mt.e_geo.1007809&mcid=6843969601940799580&cid=&gad_source=1&gclid=Cj0KCQjwiuC2BhDSARIsALOVfBJNCk4UpCycBMgaxPhollOwRGtyJb5CR_lWAS-cGdOB9NPGMvEPKhwaAso3EALw_wcB&gclsrc=aw.ds"><img src="li.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/"><img src="insta.jpeg" alt="Instagam"></a>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
+
+</body>
+</html>
